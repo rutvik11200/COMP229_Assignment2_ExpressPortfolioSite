@@ -1,0 +1,66 @@
+<!--
+File : contact.ejs
+Name : Rutvik Patel
+Student ID : 301302391
+Date : 07 Feb 2023
+-->
+
+<%-include partials/header.ejs%>
+<%-include partials/main_nav.ejs%>
+
+
+    <main class="container" style="background-color: #bed3c3;">
+        <h1 class ="display-4" style="text-align: center;">Welcome to the <%=title %> Page</h1>   
+    
+      <h3 class ="display-6" style="color: darkcyan; text-align: center;"><p>You can contact me by filling up this form.</p></h3>
+
+
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+        <hr class="hr">
+            <div class="row mt-5 mb-5">
+            <div class="col-lg-6">
+                   <div style="max-width:100%;width:500px;height:500px;">
+                    <!-- img src: https://storyset.com/illustration/contact-us/bro -->
+                    <div id="my-map-canvas" style="height:100%; width:100%; margin-top:0%;"><img src="./Assets/images/Contact.png" style="box-sizing: border-box; height: 550px; margin-left: 0px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control mt-3" id="num" placeholder="Mobile Number">
+                    <input type="email" class="form-control mt-3" id="email" placeholder="Email">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="message" name="text" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <button class="rounded" style="background-color: darkcyan; color: rgb(255, 255, 255);" id="button1" type="button">Send</button>
+                <div class="col-md-12 d-flex mt-3">
+                    <div class="col-md-4 text-center">
+                    <p><i class="fas fa-map-marker-alt fa-2x mt-4" style="color: darkcyan; margin-bottom: 0rem !important;"></i>
+                    <p>Toronto, Ontario</p>
+                    </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                    <p><i class="fas fa-phone mt-4 fa-2x" style="color: darkcyan;"></i>
+                    <p>+1 (647) 897-4361</p>
+                    </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                    <p><i class="fas fa-envelope mt-4 fa-2x" style="color: darkcyan;"></i>
+                    <p><a href="#" style="color: black;">Rutvikp11200@gmail.com</a></p>
+                    </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%-include partials/bottom_nav.ejs%>
+<%-include partials/footer.ejs%>
